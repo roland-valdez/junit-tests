@@ -34,7 +34,7 @@ public class Student {
     public double getGradeAverage(){
         double total = 0;
         for (int grade : this.grades){
-
+            total += grade;
         }
         return total / this.grades.size();
     }
