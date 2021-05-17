@@ -1,16 +1,17 @@
 
+
 import java.util.ArrayList;
 
 public class Student {
-    private String name;
+
     private long id;
+    private String name;
     private ArrayList<Integer> grades;
 
     public Student(long id, String name) {
-        ArrayList<Integer> grades = new ArrayList<Integer>();
         this.id = id;
         this.name = name;
-        this.grades = grades;
+        this.grades = new ArrayList<>();
 
     }
 
@@ -21,13 +22,16 @@ public class Student {
     public String getName() {
         return this.name;
     }
-    public ArrayList<Integer> getGrades(){
+
+    public ArrayList<Integer> getGrades() {
+
         return this.grades;
     }
 
     public void addGrade(int grade) {
         this.grades.add(grade);
     }
+
     public double getGradeAverage(){
         double total = 0;
         for (int grade : this.grades){
@@ -35,5 +39,5 @@ public class Student {
         }
         return total / this.grades.size();
     }
-}
 
+}
