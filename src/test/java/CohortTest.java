@@ -1,3 +1,4 @@
+
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -6,9 +7,8 @@ import static org.junit.Assert.*;
 public class CohortTest {
 
 
-
     @Test
-    public void testAddToListStudent(){
+    public void testAddToListStudent() {
         Student roland = new Student(1L, "roland");
         List<Student> students = new ArrayList<Student>();
         assertTrue(students.isEmpty());
@@ -18,9 +18,4 @@ public class CohortTest {
 //        assertEquals(1, students.size());
 
     }
-    @Test
-    public void testGetListStudents(){
-
-    }
-
 }
