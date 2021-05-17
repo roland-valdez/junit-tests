@@ -63,8 +63,8 @@ public class CohortTest {
     }
 
     @Test
-    public void testCanGetAverage(){
-        Student norma = new Student (5L, "norma");
+    public void testCanGetAverage() {
+        Student norma = new Student(5L, "norma");
         norma.addGrade(100);
         norma.addGrade(100);
         Student roland = new Student(1L, "roland");
@@ -78,7 +78,7 @@ public class CohortTest {
         twoStudents.addStudent(tatiana);
         assertEquals(50, twoStudents.getCohortAverage(), 1);
         assertNotEquals(0, twoStudents.getCohortAverage(), 1);
-
+    }
 
 //=======
 //    public void testCanAddStudents(){
